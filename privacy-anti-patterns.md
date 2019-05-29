@@ -91,7 +91,7 @@ user identification (instead of its intended, user-serving purposes) can
 be observed in [popular user-tracking (e.g. privacy violating)
 tools](https://github.com/Valve/fingerprintjs2) and the changes
 [privacy-focused](https://2019.www.torproject.org/projects/torbrowser/design/)
-[implementers](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)
+[implementers](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove))
 need to make to keep their users private.
 
 We emphasize that we don't think that this new functionality isn't useful;
