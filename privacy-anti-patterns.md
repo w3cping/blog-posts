@@ -69,9 +69,10 @@ result is the addition of new privacy risk to a platform already struggling
 with tremendous privacy problems, something we believe is harmful
 for the Web platform.
 
-**Solution:** Standards should define privacy protections just carefully
+#### Solution
+Standards should define privacy protections just carefully
 and precisely as they define new functionality.  Once functionality hits
-the Web, its *extremely* difficult to change its behavior or roll it back.
+the Web, its extremely difficult to change its behavior or roll it back.
 Protections need to be specific, as mandatory as the defined behavior, and
 defined from day one to protect Web privacy.
 
@@ -98,7 +99,8 @@ We emphasize that we don't think that this new functionality isn't useful;
 it is! We only mean to highlight that its also dangerous to privacy, and should
 be treated as such.
 
-**Solution:** Websites should not be able to access rarely needed
+#### Solution
+Websites should not be able to access rarely needed
 functionality, functionality aimed at very specific, uncommon use cases.
 Instead, websites should be only be allowed to use powerful new features
 when accessed from privileged positions (e.g. first-party code running
@@ -125,7 +127,8 @@ difficult), browser vendors need to untangle twice as many expected features
 from the Web. Just replicating existing fingerprinting surface amounts to
 further technical debt that we in the privacy community need to pay down.
 
-**Solution:** New standards should treat all additional privacy risk as equally
+#### Solution
+New standards should treat all additional privacy risk as equally
 problematic. The appropriate measure for new standards isn't "marginal
 increase in privacy risk"; its "could the functionality in the standard
 be used to harm user privacy." Put differently when you find you're digging
