@@ -22,7 +22,7 @@ PING tries to improve web privacy in several ways, including:
   additions to the Web platform can be designed to be private-by-default.
 
 This post discusses three "anti-patterns" PING sees in Web
-standards; reccurring issues in proposed standards that are harmful to Web
+standards; recurring issues in proposed standards that are harmful to Web
 privacy.  This is not intended to be a complete list, nor is it intended to
 call out or "shame" any particular existing standards; instead, the goal is to
 demonstrate frequently recurring problems in standards, to explain why
@@ -40,7 +40,7 @@ would like more information or examples of any of the below, feel
 free to contact the author or anyone on PING for more specifics.
 
 
-### 1. Strictly Defined Functionality, Loosely-Defined Protections
+### 1. Strictly Defined Functionality, Loosely-Defined Protections
 Many standards strictly describe functionality that browser vendors should
 implement, but are very loose or vague about the mitigations browsers should
 deploy to protect users from possible privacy harms. In extreme cases,
@@ -112,7 +112,7 @@ blog post), almost any "gating" is better than global access. Increasing the
 power of the Web, while improving user privacy, requires keeping rarely needed
 functionality rarely available.
 
-### 3. "No Worse Than The Status Quo"
+### 3. "No Worse Than The Status Quo"
 A third privacy-harming anti-pattern in Web standards concerns the bar
 standards authors use when introducing new privacy-risking
 functionality. Frequently standards authors start from the position that new
