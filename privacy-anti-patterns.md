@@ -4,8 +4,8 @@ Privacy Anti-Patterns in Standards
 What is the W3C Privacy Interest Group (aka PING)
 ---
 The Web suffers from large scale, frequent, and often invisible privacy
-violations.  These pervasive privacy problems threaten the Web's ability to serve
-as a preeminent application platform and information distribution system.
+violations.  These pervasive privacy problems threaten the Web's ability to
+serve as a preeminent application platform and information distribution system.
 
 <abbr title="Privacy Interest Group">PING</abbr> is an
 [Interest Group](https://www.w3.org/2019/Process-20190301/#GroupsWG) with
@@ -21,11 +21,11 @@ PING tries to improve web privacy in several ways, including:
 * developing and sharing guidelines for standards authors, so that future
   additions to the Web platform can be designed to be private-by-default.
 
-This post discusses three reccurring "anti-patterns" PING sees in Web
-standards, or reccurring issues in proposed standards that are harmful to Web
+This post discusses three "anti-patterns" PING sees in Web
+standards; reccurring issues in proposed standards that are harmful to Web
 privacy.  This is not intended to be a complete list, nor is it intended to
 call out or "shame" any particular existing standards; instead, the goal is to
-demonstrate frequently recurring problems we see in standards, to explain why
+demonstrate frequently recurring problems in standards, to explain why
 they are harmful to the goal of a privacy-respecting Web, and to provide
 guidelines for how future standards can be designed to respect privacy.
 
@@ -36,26 +36,26 @@ In this section we detail three problems that harm privacy in
 Web standards. Though each of these occur in many (many!) standards,
 we're intentionally *not* calling out or mentioning any specific standards,
 to keep the descriptions as general and pattern-based as possible.  If anyone
-would like more information or examples of any of the below though, feel
+would like more information or examples of any of the below, feel
 free to contact the author or anyone on PING for more specifics.
 
 
 ### 1. Strictly Defined Functionality, Loosely-Defined Protections
 Many standards strictly describe functionality that browser vendors should
 implement, but are very loose or vague about the mitigations browsers should
-deploy to protect users from possible privacy harms. In the extreme cases,
+deploy to protect users from possible privacy harms. In extreme cases,
 standards will have many pages of text describing, in precise language,
-how new functionality will work, followed by a paragraph or two saying
-"implementers can vary from the standard at any time to protect users' privacy."
+how new functionality will work, followed by a paragraph or two saying,
+"implementers can vary from the standard at any time to protect user privacy."
 
 While well meaning, patterns like the above (strictly defined functionality,
 loosely-defined protections) are harmful to Web privacy for several reasons.
 
-First, though it might seem that weakly / broadly defined mitigations maximizes
+First, though it might seem that weakly/broadly-defined mitigations maximize
 implementer flexibility in protecting user privacy, the opposite ends up
 being true; weakly defined mitigations make it extremely difficult to protect
-user privacy; websites end up assuming the presence of defined functionality, and
-privacy-oriented implementers end up with unmanageable compatibility
+user privacy; websites end up assuming the presence of defined functionality,
+and privacy-oriented implementers end up with unmanageable compatibility
 problems if they alter the behavior of these privacy-harming, but expected
 features.
 
@@ -70,11 +70,11 @@ with tremendous privacy problems, something we believe is harmful
 for the Web platform.
 
 #### Solution
-Standards should define privacy protections just as carefully
-and precisely as they define new functionality.  Once functionality hits
-the Web, it's extremely difficult to change its behavior or roll it back.
-Protections need to be specific, as mandatory as the defined behavior, and
-defined from day one to protect Web privacy.
+Standards should define privacy protections as carefully and precisely as they
+define new functionality.  Once functionality hits the Web, it is extremely
+difficult to change its behavior or roll it back.  Protections need to be
+specific, as mandatory as the defined behavior, and defined from day one to
+protect Web privacy.
 
 
 ### 2. Uncommon Use Cases, Global Availability
@@ -83,7 +83,7 @@ over-availability of new functionality; powerful new functionality aimed at
 niche use-cases, being made globally available (e.g. third-party code,
 third-party frames, without permission prompt, user gesture, or user
 notification, etc). Many of these powerful new browser capabilities end up
-beneficial to users on only a small number of websites, but leveraged
+being beneficial to users on only a small number of websites, but leveraged
 for [passive](https://panopticlick.eff.org)
 [fingerprinting](https://browserleaks.com) on a large number of websites.
 
@@ -96,8 +96,8 @@ tools](https://github.com/Valve/fingerprintjs2) and the changes
 need to make to keep their users private.
 
 We emphasize that we don't think that this new functionality isn't useful;
-it is! We only mean to highlight that it's also dangerous to privacy, and should
-be treated as such.
+it is! We only mean to highlight that it's also dangerous to privacy, and
+should be treated as such.
 
 #### Solution
 Websites should not globally be able to access rarely needed
@@ -114,11 +114,11 @@ functionality rarely available.
 
 ### 3. "No Worse Than The Status Quo"
 A third privacy-harming anti-pattern in Web standards concerns the bar
-standards authors hold themselves to when introducing new privacy-risking
-functionality. Frequently, standards authors start from the position that
-new standards should not make Web privacy worse. The result is that new
-standards often make existing sensitive information available in additional
-locations. This is extremely harmful for Web privacy.
+standards authors use when introducing new privacy-risking
+functionality. Frequently standards authors start from the position that new
+standards should not make Web privacy worse than its current (poor) state.
+As a result, standards are created that replicate existing privacy harms,
+through new end points or locations. This is extremely harmful for Web privacy.
 
 Even just replicating sensitive, or user identifying, information
 in new locations makes future mitigation more difficult.  Instead of needing
@@ -128,9 +128,9 @@ from the Web. Just replicating existing fingerprinting surface amounts to
 further technical debt that we in the privacy community need to pay down.
 
 #### Solution
-New standards should treat all additional privacy risk as 
+New standards should treat all additional privacy risk as
 problematic. The appropriate measure for new standards isn't "marginal
-increase in privacy risk"; it's "could the functionality in the standard
+increase in privacy risk"; it is "could the functionality in the standard
 be used to harm user privacy." Put differently, when you find you're digging
 yourself into a hole, the first thing to do is to stop digging. The Web is
 already rife with difficult privacy problems, new standards should not entrench
@@ -139,15 +139,14 @@ the problem further.
 
 The Importance of Privacy in Standards
 ---
-In conclusion, our goal in this post is to highlight the critical role
-standards play in protecting Web privacy, and thus confidence in the Web
-as an information an application platform in general. Web standards can
-either play an invaluable role in building a "private by default" platform
-we can be proud of, or it can take the form of a mass of privacy-risking
-functionality that implementers need to mutate, violate and deviate from
-to keep users private and protected.
+The goal in this post is to highlight the critical role standards play in
+protecting privacy on the Web, and thus confidence in the Web platform general
+generally. Web standards can either help build a "private by default" platform
+we can be proud of, or Web standards can normalize privacy-harming
+functionality and hope that implementers will mutate, violate and deviate from
+those standards to keep users protected.
 
-The three anti-patterns described above are a significant part of how
-the Web wound up in its problematic, frequently privacy-harming state. Fixing
-these anti-patterns is a necessary part of building a humane, privacy
+The three anti-patterns described play a significant part in how
+the Web wound up in its current problematic, frequently privacy-harming state.
+Fixing these anti-patterns is a necessary part of building a humane, privacy
 respecting Web.
