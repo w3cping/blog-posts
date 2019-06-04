@@ -10,7 +10,7 @@ serve as a preeminent application platform and information distribution system.
 <abbr title="Privacy Interest Group">PING</abbr> is an
 [Interest Group](https://www.w3.org/2019/Process-20190301/#GroupsWG) with
 the mission of improving privacy in Web standards, so that Web users can be
-confident that they can use the Web without putting their privacy at risk.
+more confident that using the Web won't put their privacy at risk.
 
 PING tries to improve web privacy in several ways, including:
 
@@ -18,8 +18,9 @@ PING tries to improve web privacy in several ways, including:
   threating features.
 * revising existing standards to improve the privacy-properties of existing
   functionality.
-* developing and sharing guidelines for standards authors, so that future
-  additions to the Web platform can be designed to be private-by-default.
+* developing and sharing [guidelines for standards authors](https://www.w3.org/TR/security-privacy-questionnaire/),
+  so that future additions to the Web platform can be designed to be
+  private-by-default.
 
 This post discusses three "anti-patterns" PING sees in Web
 standards; recurring issues in proposed standards that are harmful to Web
