@@ -66,9 +66,8 @@ are expected to address the current harm (bad!), in other cases because
 there is no commonly agreed-to solution for dealing with the harm (bad!), and
 in yet other cases it is because the standards authors believe the benefits of
 the new functionality outweigh the privacy harms.  In all cases, the end
-result is the addition of new privacy risk to a platform already struggling
-with tremendous privacy problems, something we believe is harmful
-for the Web platform.
+result is additional privacy risk to a platform already struggling
+with tremendous privacy problems.
 
 #### Solution
 Standards should define privacy protections as carefully and precisely as they
@@ -107,11 +106,12 @@ Instead, websites should be only be allowed to use powerful new features
 when accessed from privileged positions (e.g. first-party code running
 in a first party context, but not third-party frames, etc.) or when users
 have given some signal they desire the additional functionality (e.g.
-a permission prompt, a user gesture, etc.).  While the specific "gating"
-mechanisms will vary from case to case (and thus is beyond the scope of this
-blog post), almost any "gating" is better than global access. Increasing the
-power of the Web, while improving user privacy, requires keeping rarely needed
-functionality rarely available.
+a permission prompt, a user gesture, etc.).
+
+The specific "gating" mechanisms will vary from case to case (and thus is
+beyond the scope of this blog post), but almost any "gating" is better than
+global access. Increasing the power of the Web, while improving user privacy,
+requires keeping rarely needed functionality rarely available.
 
 ### 3. "No Worse Than The Status Quo"
 A third privacy-harming anti-pattern in Web standards concerns the bar
