@@ -105,7 +105,7 @@ functionality, functionality aimed at very specific, uncommon use cases.
 Instead, websites should be only be allowed to use powerful new features
 when accessed from privileged positions (e.g. first-party code running
 in a first party context, but not third-party frames, etc.) or when users
-have given some signal they desire the additional functionality (e.g.
+have given a clear signal that they desire the additional functionality (e.g.
 a permission prompt, a user gesture, etc.).
 
 The specific "gating" mechanisms will vary from case to case (and thus is
