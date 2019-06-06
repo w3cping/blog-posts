@@ -1,44 +1,17 @@
 Privacy Anti-Patterns in Standards
 ===
 
-What is the W3C Privacy Interest Group (aka PING)
----
 The Web suffers from large scale, frequent, and often invisible privacy
 violations.  These pervasive privacy problems threaten the Web's ability to
 serve as a preeminent application platform and information distribution system.
 
-<abbr title="Privacy Interest Group">PING</abbr> is an
-[Interest Group](https://www.w3.org/2019/Process-20190301/#GroupsWG) with
-the mission of improving privacy in Web standards, so that Web users can be
-more confident that using the Web won't put their privacy at risk.
-
-PING tries to improve web privacy in several ways, including:
-
-* reviewing newly proposed standards to remove, modify or restrict privacy
-  threating features.
-* revising existing standards to improve the privacy-properties of existing
-  functionality.
-* developing and sharing [guidelines for standards authors](https://www.w3.org/TR/security-privacy-questionnaire/),
-  so that future additions to the Web platform can be designed to be
-  private-by-default.
-
-This post discusses three "anti-patterns" PING sees in Web
-standards; recurring issues in proposed standards that are harmful to Web
-privacy.  This is not intended to be a complete list, nor is it intended to
-call out or "shame" any particular existing standards; instead, the goal is to
-demonstrate frequently recurring problems in standards, to explain why
+[W3C's Privacy Interest Group](https://www.w3.org/Privacy/IG/) (PING) has been seeing several patterns in web
+standards that are harmful to Web Privacy.  Though each of these occur in
+many (many!) standards, we're intentionally *not* calling out or shaming any
+specific standards; instead, the goal is to
+demonstrate frequently recurring problems, to explain why
 they are harmful to the goal of a privacy-respecting Web, and to provide
-guidelines for how future standards can be designed to respect privacy.
-
-
-Three Privacy "Anti-Patterns" in Web Standards
----
-In this section we detail three problems that harm privacy in
-Web standards. Though each of these occur in many (many!) standards,
-we're intentionally *not* calling out or mentioning any specific standards,
-to keep the descriptions as general and pattern-based as possible.  If anyone
-would like more information or examples of any of the below, feel
-free to contact the author or anyone on PING for more specifics.
+guidelines for how future standards can be designed to better respect privacy.
 
 
 ### 1. Strictly Defined Functionality, Loosely-Defined Protections
@@ -151,3 +124,22 @@ The three anti-patterns described play a significant part in how
 the Web wound up in its current problematic, frequently privacy-harming state.
 Fixing these anti-patterns is a necessary part of building a humane, privacy
 respecting Web.
+
+
+
+What is the W3C Privacy Interest Group (aka PING)
+---
+
+W3C's [Privacy Interest Group](https://www.w3.org/Privacy/IG/) has the
+the mission of improving privacy in Web standards so that Web users can be
+more confident that using the Web won't put their privacy at risk.
+
+PING tries to improve web privacy in several ways, including:
+
+* reviewing newly proposed standards to remove, modify or restrict privacy
+  threating features.
+* revising existing standards to improve the privacy-properties of existing
+  functionality.
+* developing and sharing [guidelines for standards authors](https://www.w3.org/TR/security-privacy-questionnaire/),
+  so that future additions to the Web platform can be designed to be
+  private-by-default.
