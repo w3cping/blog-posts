@@ -50,15 +50,17 @@ specific, as mandatory as the defined behavior, and defined from day one to
 protect Web privacy.
 
 
-### 2. Uncommon Use Cases, Global Availability
+### 2. No differentiation between first and third parties
 A second privacy-harming pattern we see in Web standards is the
 over-availability of new functionality; powerful new functionality aimed at
-niche use-cases, being made globally available (e.g. third-party code,
-third-party frames, without permission prompt, user gesture, or user
-notification, etc). Many of these powerful new browser capabilities end up
-being beneficial to users on only a small number of websites, but leveraged
+niche use-cases, being made available to first and third parties without
+distinction (e.g. third-party code, third-party frames, without permission
+prompt, user gesture, or user notification, etc). Many of these powerful
+new browser capabilities end up being beneficial to users on only a small
+number of websites in a first party context, but end up being leveraged
 for [passive](https://panopticlick.eff.org)
-[fingerprinting](https://browserleaks.com) on a large number of websites.
+[fingerprinting](https://browserleaks.com) on a large number of websites by
+third parties.
 
 This pattern of leveraging powerful-but-rarely-used functionality for
 user identification (instead of its intended, user-serving purposes) can
@@ -70,21 +72,23 @@ need to make to keep their users private.
 
 We emphasize that we don't think that this new functionality isn't useful;
 it is! We only mean to highlight that it's also dangerous to privacy, and
-should be treated as such.
+should be treated as such by limiting its functionality to the first party
+providing the experience as opposed to all parties on a page.
 
 #### Solution
-Websites should not globally be able to access rarely needed
-functionality, functionality aimed at very specific, uncommon use cases.
-Instead, websites should be only be allowed to use powerful new features
-when accessed from privileged positions (e.g. first-party code running
+Functionality should be aimed at very specific, uncommon use cases that are
+typically served by the first party domain, rather than being available to
+all parties by default. Websites should be only be allowed to use powerful new
+features when accessed from privileged positions (e.g. first-party code running
 in a first party context, but not third-party frames, etc.) or when users
 have given a clear signal that they desire the additional functionality (e.g.
 a permission prompt, a user gesture, etc.).
 
 The specific "gating" mechanisms will vary from case to case (and thus is
 beyond the scope of this blog post), but almost any "gating" is better than
-global access. Increasing the power of the Web, while improving user privacy,
-requires keeping rarely needed functionality rarely available.
+not distinguishing between first and third party access. Increasing the power
+of the Web, while improving user privacy, requires keeping rarely needed
+functionality rarely available.
 
 ### 3. "No Worse Than The Status Quo"
 A third privacy-harming anti-pattern in Web standards concerns the bar
