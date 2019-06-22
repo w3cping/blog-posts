@@ -33,6 +33,8 @@ This was inspired by discussions at the [W3C Workshop on Permissions and User Co
    * transparency: notice for ongoing, background or not-just-in-time actions can be challenging, but ambient notice and asynchronous notice are some options. Without that notice, a user who granted permission in the past and forgot (or someone else granted the permission on their device, or a device had multiple users, or the user previously made a decision in a different context) will not have effective means to update their choices.
 
    * revocability: easy access to withdraw permission is generally useful but especially important in cases of ongoing permission.
+   
+   * limited duration: permissions should be for a limited duration, as people's attitudes and conditions change. Consider ensuring that the permission expires after a reasonable time period - months or less rather than years.
 
 5. How will users understand how collected personal data will be used, who has access to it, how long it will be retained and how they can access or delete it?
 
@@ -52,9 +54,12 @@ While W3C standardization discussions tend to focus on the design of features, w
 
 * Progressive enhancement: ask for only the permission you need and prepare to gracefully handle cases where a capability is not available.
 
-* Explain the implications of a permission before prompting the user, in a way that is accessible and localized. _Who_ is asking, _what_ are you asking for, _why_ do you need it?
+* Explain the implications of a permission before prompting the user, in a way that is accessible and localized. _Who_ is asking, _what_ are you asking for, _why_ do you need it? It should be easy for the user to determine not only what permissions they have benn given but also the identity of the entity who has asked for them and the reason given at the time.
 
 * Users can and will change their minds. Don't assume that a permission granted once guarantees permanent access; nor that a permission refused means a user will never choose to accept some functionality.
+
+* Ensure that the permission will expire after a reasonable duration, so that users are reminded of it and gien the free ability to renew.
+
 
 ---
 
