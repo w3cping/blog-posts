@@ -1,4 +1,4 @@
-# Adding another permission? A guide
+# Adding another permission? Questions and suggestions
 
 So, you're thinking of adding a new permission prompt to the Web platform? Specification authors and feature designers may find this list of questions useful to think through.
 
@@ -28,7 +28,7 @@ This was inspired by discussions at the [W3C Workshop on Permissions and User Co
 
 4. What is the duration and persistence of your permission?
 
-   Different user agents may handle persisting permission in different ways. Considering duration and persistence ahead of time are useful, though. If a permission is requested for some future, ongoing or recurring functionality, then additional features are typically necessary for *accountability*, specifically:
+   Different user agents may handle persisting permission in different ways. Considering duration and persistence ahead of time are useful, though. As user's attitudes and conditions will change,limited duration or expiration may be important. If a permission is requested for some future, ongoing or recurring functionality, then additional features are typically necessary for *accountability*, specifically:
 
    * transparency: notice for ongoing, background or not-just-in-time actions can be challenging, but ambient notice and asynchronous notice are some options. Without that notice, a user who granted permission in the past and forgot (or someone else granted the permission on their device, or a device had multiple users, or the user previously made a decision in a different context) will not have effective means to update their choices.
 
@@ -54,7 +54,7 @@ While W3C standardization discussions tend to focus on the design of features, w
 
 * Explain the implications of a permission before prompting the user, in a way that is accessible and localized. _Who_ is asking, _what_ are you asking for, _why_ do you need it?
 
-* Users can and will change their minds. Don't assume that a permission granted once guarantees permanent access; nor that a permission refused means a user will never choose to accept some functionality.
+* Users can and will change their minds. Don't assume that a permission granted once guarantees permanent access; nor that a permission refused means a user will never choose to accept some functionality. Set expiration of permissions to a reasonable duration, so that users are reminded and have a chance to renew or change their stated preferences.
 
 ---
 
