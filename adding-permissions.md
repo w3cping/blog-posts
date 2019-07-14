@@ -24,7 +24,7 @@ This was inspired by discussions at the [W3C Workshop on Permissions and User Co
 
    Asking users to give permission to a piece of data they don't understand is not helpful. (Acronyms definitely fall into this category.) If the resource provides the site with a capability similar to some other resource or sensor, then there are reasons to consider this the same permission.
 
-   Consider also what can be inferred by access to a sensor or piece of personal data that may not be generally obvious. Research has shown: that accelerometer data might reveal the contents of typing; that light sensors might reveal activity on other devices; that photo files often include invisible geolocation metadata.
+   Consider also what can be inferred by access to a sensor or piece of personal data that may not be generally obvious. Put yourself in the shoes of a malicious actor to consider the range of possible mis-uses of a feature. Research has shown: that accelerometer data might reveal the contents of typing; that light sensors might reveal activity on other devices; that photo files often include invisible geolocation metadata.
 
 4. What is the duration and persistence of your permission?
 
