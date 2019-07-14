@@ -28,7 +28,7 @@ This was inspired by discussions at the [W3C Workshop on Permissions and User Co
 
 4. What is the duration and persistence of your permission?
 
-   Different user agents may handle persisting permission in different ways. Considering duration and persistence ahead of time are useful, though. As user's attitudes and conditions will change,limited duration or expiration may be important. If a permission is requested for some future, ongoing or recurring functionality, then additional features are typically necessary for *accountability*, specifically:
+   Different user agents may handle persisting permission in different ways. Considering duration and persistence ahead of time are useful, though. As user attitudes and conditions will change, limited duration or expiration may be important. If a permission is requested for some future, ongoing or recurring functionality, then additional features are typically necessary for *accountability*, specifically:
 
    * transparency: notice for ongoing, background or not-just-in-time actions can be challenging, but ambient notice and asynchronous notice are some options. Without that notice, a user who granted permission in the past and forgot (or someone else granted the permission on their device, or a device had multiple users, or the user previously made a decision in a different context) will not have effective means to update their choices.
 
