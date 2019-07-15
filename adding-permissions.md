@@ -2,13 +2,15 @@
 
 So, you're thinking of adding a new permission prompt to the Web platform? Specification authors and feature designers may find this list of questions useful to think through.
 
-This was inspired by discussions at the [W3C Workshop on Permissions and User Consent](https://www.w3.org/Privacy/permissions-ws-2018/) held last September in San Diego. A [full workshop report](https://www.w3.org/Privacy/permissions-ws-2018/report.html) is available from two days of discussions, covering the challenges of asking for permission, explaining it in context and designing a platform for permissions that are neither intrusive nor fatiguing. That discussion is ongoing (and builds from a [workshop on trust and permissions](https://www.w3.org/2014/07/permissions/) from 2014), but we hope these questions are a starting point for considering new (and existing) permissions right now.
+This was inspired by discussions at the [W3C Workshop on Permissions and User Consent](https://www.w3.org/Privacy/permissions-ws-2018/) held last September in San Diego. A [full workshop report](https://www.w3.org/Privacy/permissions-ws-2018/report.html) is available from two days of discussions, covering the challenges of asking for permission, explaining it in context and designing a platform for permissions that are neither intrusive nor fatiguing. That discussion is ongoing (and builds from a [workshop on trust and permissions](https://www.w3.org/2014/07/permissions/) from 2014), but we ([PING](https://www.w3.org/Privacy/IG/), the Privacy Interest Group) hope these questions are a starting point for considering new (and existing) permissions right now.
 
 ## Designing Web features with permissions
 
 1. Is this feature important for the Web platform?
 
    Specifically, is this feature important functionality that is consistent with the Web's model of privacy, security, accessibility and permissionless innovation? The Web need not be identical to every other software platform, and the distinctive features of the Web -- that software doesn't need to be vetted to operate, that documents and software co-exist, that users can be free from danger and intrusion when visiting a page, that interoperability is available among a wide range of devices and agents -- are essential to its ongoing success.
+
+   Some features may not need to be part of the platform at all (and thus not require more complicated user permissions). Some deployed Web features have been subsequently removed by implementers when the invasive potential outweighed the functionality or when most uses were for tracking users rather than intended functionality -- for example, the Battery Status API [as described in the Security and Privacy Questionnaire](https://www.w3.org/TR/security-privacy-questionnaire/#drop-feature).
 
 2. Does this feature require explicit permission?
 
@@ -28,7 +30,9 @@ This was inspired by discussions at the [W3C Workshop on Permissions and User Co
 
 4. What is the duration and persistence of your permission?
 
-   Different user agents may handle persisting permission in different ways. Considering duration and persistence ahead of time are useful, though. As user attitudes and conditions will change, limited duration or expiration may be important. If a permission is requested for some future, ongoing or recurring functionality, then additional features are typically necessary for *accountability*, specifically:
+   Different user agents may handle persisting permission in different ways. Considering duration and persistence ahead of time is useful, though. Since user attitudes and conditions will change, limited duration or expiration may be important.
+
+   If a permission is requested for some future, ongoing or recurring functionality, then additional features are typically necessary for *accountability*, specifically:
 
    * transparency: notice for ongoing, background or not-just-in-time actions can be challenging, but ambient notice and asynchronous notice are some options. Without that notice, a user who granted permission in the past and forgot (or someone else granted the permission on their device, or a device had multiple users, or the user previously made a decision in a different context) will not have effective means to update their choices.
 
@@ -36,9 +40,9 @@ This was inspired by discussions at the [W3C Workshop on Permissions and User Co
 
 5. How will users understand how collected personal data will be used, who has access to it, how long it will be retained and how they can access or delete it?
 
-   In the past, we have sometimes included in specifications the requirement that sites use their own expressive HTML to explain how a capability will be used and their choices regarding it prior to making a browser-mediated permission request. Our experience has shown this option to be very frequently ignored by sites, even when sites may be required by local laws to get such informed and specific consent.
+   In the past, specifications have sometimes included a requirement that sites use their own expressive HTML to explain how a capability will be used and their choices regarding it prior to making a browser-mediated permission request. Experience has shown this option to be very frequently ignored by sites, even when sites may be required by local laws to get such informed and specific consent.
 
-   We believe ongoing research on this problem could help explore whether some purpose specification within browser-mediated permission-granting UI could be managed in a way that doesn't violate trust boundaries. (This debate is at least ten years old, but we're facing many of the same problems and needs today.) For example, [iOS provides a "usage description string"](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/requesting-permission/) from the app developer on dialogs for location and photos permissions.
+   Workshop attendees concluded that ongoing research on this problem could help explore whether some purpose specification within browser-mediated permission-granting UI could be managed in a way that doesn't violate trust boundaries. (This debate is at least ten years old, but the community is facing many of the same problems today.) For example, [iOS provides a "usage description string"](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/requesting-permission/) from the app developer on dialogs for location and photos permissions.
 
 6. What conditions are necessary for this new permission?
 
